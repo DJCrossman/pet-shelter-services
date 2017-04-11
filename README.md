@@ -23,13 +23,13 @@ A pet is a domestic or tamed animal kept for companionship or pleasure.
 
 | Name    | Description |
 |---------|-------------|
-| id _(Integer)_ | Unique identifier |
+| id _(Uuid)_ | Unique identifier |
 | name _(String)_ | The name of a given pet. |
 | typeName _(String)_ | The name of the type of pet which is typically an animal. ie. cat, dog, etc... |
 | breedName _(String)_ | The name of the stock of animals within the species having a distinctive appearance. |
 | location _(String)_ | The place the animal can be found. |
-| lat _(Double)_ | The latitude of the location of the animal. |
-| long _(Double)_ | The latitude of the location of the animal. |
+| lat _(Float)_ | The latitude of the location of the animal. |
+| long _(Float)_ | The latitude of the location of the animal. |
 
 ## Requests
 
@@ -57,7 +57,7 @@ HTTP 200 Content-Type: application/json
       "breedName": "Shiba Inu",
       "location": "Regina, SK",
       "lat": "50.4079406",
-      "long": "-104.6214",
+      "long": "-104.6214"
     }
 ]
 ```
@@ -72,7 +72,7 @@ HTTP 200 Content-Type: application/json
 
 * name (Required)
 * typeName (Required)
-* breedName (Optional)
+* breedName (Required)
 * location (Required)
 * lat (Required) - Valid latitude coordinate
 * long (Required) - Valid longitude coordinate
@@ -88,7 +88,7 @@ Accept: application/json
   "breedName": "Shiba Inu",
   "location": "Regina, SK",
   "lat": "50.4079406",
-  "long": "-104.6214",
+  "long": "-104.6214"
 }
 ```
 
@@ -104,7 +104,7 @@ HTTP 200 Content-Type: application/json
   "breedName": "Shiba Inu",
   "location": "Regina, SK",
   "lat": "50.4079406",
-  "long": "-104.6214",
+  "long": "-104.6214"
 }
 ```
 
@@ -132,7 +132,7 @@ HTTP 200 Content-Type: application/json
   "breedName": "Shiba Inu",
   "location": "Regina, SK",
   "lat": "50.4079406",
-  "long": "-104.6214",
+  "long": "-104.6214"
 }
 ```
 
@@ -163,7 +163,7 @@ Accept: application/json
   "breedName": "Shiba Inu",
   "location": "Regina, SK",
   "lat": "50.4079406",
-  "long": "-104.6214",
+  "long": "-104.6214"
 }
 ```
 
@@ -179,7 +179,7 @@ HTTP 200 Content-Type: application/json
   "breedName": "Shiba Inu",
   "location": "Regina, SK",
   "lat": "50.4079406",
-  "long": "-104.6214",
+  "long": "-104.6214"
 }
 ```
 
