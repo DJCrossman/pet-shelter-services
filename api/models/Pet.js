@@ -26,7 +26,8 @@ module.exports = {
 
     name: {
       type: 'string',
-      required: true
+      required: true,
+      unique: true
     },
 
     typeName: {
@@ -36,7 +37,8 @@ module.exports = {
 
     breedName: {
       type: 'string',
-      required: true
+      required: true,
+      unique: true
     },
 
     location: {
